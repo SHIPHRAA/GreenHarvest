@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.hero-bg {
+    background-image: url('images/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: pulse 10s infinite alternate;
+}
+.image2 {
+    background-image: url('images/Plantain.jpg'); /* Second image */
+    background-size: cover;
+    background-position: center;
+}
+
+.image3 {
+    background-image: url('images/Fruits.jpg'); /* Third image */
+    background-size: cover;
+    background-position: center;
+}
+
+.image4 {
+    background-image: url('images/Cucumber.jpg'); /* Fourth image */
+    background-size: cover;
+    background-position: center;
+}
+.image5 {
+    background-image: url('images/Vegetables.jpg'); /* Fourth image */
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+    background-color: #32CD32; /* Lime green */
+    color: #ffffff;
+}
+
+.dark-mode .bg-white {
+    background-color: #0ae30a; /* Darker lime green */
+}
+
+.dark-mode .text-textColor,
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode .bg-lightBg {
+    background-color: #15f174; /* Another shade of green */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-bg {
+        background-attachment: scroll;
+    }
+
+    #chatbot iframe {
+        height: 80vh;
+        max-height: 600px;
+    }
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+    nav a, button {
+        padding: 0.75rem;
+        margin: 0.25rem;
+    }
+
+    #mobileMenuButton {
+        padding: 0.5rem;
+    }
+}
